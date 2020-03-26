@@ -11,6 +11,10 @@ router.register('hello-viewset', views.HelloViewSet, base_name='hello-viewset')
 # does not exists
 #http://127.0.0.1:8000/api/profile/
 router.register('profile', views.UserProfileViewSet )
+#http://127.0.0.1:8000/api/feed/
+router.register('feed', views.UserProfileFeedViewSet )
+
+
 
 urlpatterns=[
 #http://127.0.0.1:8000/api/hello-view/
