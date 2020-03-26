@@ -15,5 +15,8 @@ router.register('profile', views.UserProfileViewSet )
 urlpatterns=[
 #http://127.0.0.1:8000/api/hello-view/
 path('hello-view/',views.HelloApiView.as_view()),
+#http://127.0.0.1:8000/api/login/
+path('login/',views.UserLoginApiView.as_view()),
+
 path('',include(router.urls) ),
 ]
